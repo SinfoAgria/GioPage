@@ -81,12 +81,12 @@ body {
       }
       
       .columna-izquierda,
-#estructura-clases {
-  flex: 1 1 0;
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-}
+      #estructura-clases {
+       flex: 1 1 0;
+       display: flex;
+       flex-direction: column;
+       min-width: 0;
+     }
 
       .video-container {
         position: relative;
