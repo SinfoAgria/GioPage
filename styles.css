@@ -134,6 +134,8 @@ body {
       }
 
       .bloque-clase {
+        display: flex;
+        flex-direction: column;  /* 🔥 fuerza que vaya debajo */
         margin-bottom: 40px;
       }
 
