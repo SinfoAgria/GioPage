@@ -27,7 +27,7 @@ body {
 
     section {
       padding: 40px;
-      margin: 20px;
+      margin: 40px auto;
       background-color: white;
       border-radius: 10px;
     }
