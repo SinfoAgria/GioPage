@@ -101,16 +101,23 @@ body {
 
       .recuadro-combinado {
         display: flex;
-        flex-direction: row;   /* 👈 fuerza horizontal */
         gap: 20px;
         height: 600px;
       }
       
-      /* Cada lado ocupa 50% */
+      /* 🔥 Ahora las columnas son los bloques */
+      .bloque-clase {
+        flex: 1;                /* 50 / 50 real */
+        display: flex;
+        flex-direction: column; /* título arriba, contenido debajo */
+        min-width: 0;
+      }
+      
+      /* Contenedores internos */
       .slides-container,
       .doc-container {
-        flex: 1;
-        min-width: 0;
+        flex: 1;       /* que el iframe ocupe el espacio disponible */
+        min-height: 0; /* importante para evitar overflow raro */
       }
       
       /* Iframes */
@@ -120,23 +127,17 @@ body {
         border: none;
         border-radius: 10px;
       }
-
+      
+      /* Responsive */
       @media (max-width: 900px) {
         .recuadro-combinado {
-          flex-direction: row;
+          flex-direction: column;
           height: auto;
         }
       
-        .slides-container,
-        .doc-container {
+        .bloque-clase {
           height: 500px;
         }
-      }
-
-      .bloque-clase {
-        display: flex;
-        flex-direction: column;  /* 🔥 fuerza que vaya debajo */
-        margin-bottom: 40px;
       }
 
       
