@@ -83,7 +83,7 @@ body {
       .estructura-container {
         display: flex;
         gap: 20px;
-        align-items: flex-start;
+        align-items: stretch; /* 🔥 importante */
       }
       
       #estructura-curso,
