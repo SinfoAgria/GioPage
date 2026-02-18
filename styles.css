@@ -103,6 +103,7 @@ body {
         display: flex;
         gap: 20px;
         height: 600px;
+        width: 100%;        /* 🔥 importante */
       }
       
       /* 🔥 Ahora las columnas son los bloques */
