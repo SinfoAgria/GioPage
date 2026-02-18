@@ -54,6 +54,7 @@ body {
     .doc-container {
         flex: 1;
         min-height: 0;
+        overflow: hidden;
       }
       
       .doc-container iframe {
