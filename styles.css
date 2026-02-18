@@ -79,3 +79,8 @@ body {
           flex-direction: column;
         }
       }
+
+      iframe {
+        width: 100% !important;
+        max-width: 100%;
+      }
