@@ -52,8 +52,8 @@ body {
     }
 
     .doc-container {
-        width: 100%;
-        height: 600px;
+        flex: 1;
+        min-height: 0; /* 🔥 clave para scroll interno */
       }
       
       .doc-container iframe {
@@ -88,8 +88,10 @@ body {
       
       #estructura-curso,
       #estructura-clases {
-        flex: 1;
-        min-width: 0;
+       flex: 1;
+       display: flex;
+       flex-direction: column;
+       min-width: 0;
       }
 
       .video-container {
