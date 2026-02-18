@@ -78,24 +78,15 @@ body {
       .estructura-container {
         display: flex;
         gap: 20px;
-        align-items: stretch;
       }
       
       .columna-izquierda,
-      #estructura-clases {
-       flex: 1;
-       display: flex;
-       flex-direction: column;
-       min-width: 0;
-      }
-      
-      #estructura-curso,
-      #estructura-clases {
-       flex: 1;
-       display: flex;
-       flex-direction: column;
-       min-width: 0;
-      }
+#estructura-clases {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
 
       .video-container {
         position: relative;
